@@ -31,7 +31,7 @@ In the Machine Learning approach, the initial phase included preprocessing of im
 For the Deep Learning approach, we utilized the default preprocessing functions of Keras, ensuring consistency with the methods used during the training of the pretrained networks. To counteract the effects of an unbalanced dataset, data augmentation techniques were applied, including random transformations like rotations and flips on images of the minority classes. In the model creation and compilation stage, several pretrained networks such as InceptionResnetV2 and VGG16 were evaluated. These networks were modified at the top layers to suit the classification task at hand. The models were compiled using the Adam optimizer, and categorical cross-entropy was selected as the loss function, with accuracy as the evaluation metric. During training, we established specific parameters for epochs and class weights, and implemented an Early Stopping callback to reduce the risk of overfitting.
 
 <p align="center">
-  <img src="images/VGG16.png" width="700" height="200" alt="VGG16 architecture">
+  <img src="images/VGG16.png" width="500" height="400" alt="VGG16 architecture">
 </p>
 
 <p align="center">Figure 3. VGG16 model’s architecture.</p>
