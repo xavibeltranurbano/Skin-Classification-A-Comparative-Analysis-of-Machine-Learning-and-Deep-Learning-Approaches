@@ -18,16 +18,18 @@ In the study, traditional Machine Learning (ML) and modern Deep Learning (DL) te
 
 In the Machine Learning approach, the initial phase included preprocessing of images and feature extraction, where a combination of image processing techniques and transfer learning were used. The extracted features underwent dimensionality reduction using Principal Component Analysis (PCA). Various classifiers, including Support Vector Machine (SVM), Random Forest, and K-Nearest Neighbors (KNN), were then implemented. The study employed a 10-fold cross-validation strategy to validate the models and used a one-versus-all technique for multi-class classification to train the classifiers.
 
-<figure align="center">
+<p align="center">
   <img src="images/ML_diagram.png" width="700" height="200" alt="VGG16 architecture">
-  <figcaption>Figure 2. Machine learning approach diagram.</figcaption>
-</figure>
+</p>
+
+<p align="center">Figure 2. Machine learning approach diagram.</p>
+
 
 
 For the Deep Learning approach, we utilized the default preprocessing functions of Keras, ensuring consistency with the methods used during the training of the pretrained networks. To counteract the effects of an unbalanced dataset, data augmentation techniques were applied, including random transformations like rotations and flips on images of the minority classes. In the model creation and compilation stage, several pretrained networks such as InceptionResnetV2 and VGG16 were evaluated. These networks were modified at the top layers to suit the classification task at hand. The models were compiled using the Adam optimizer, and categorical cross-entropy was selected as the loss function, with accuracy as the evaluation metric. During training, we established specific parameters for epochs and class weights, and implemented an Early Stopping callback to reduce the risk of overfitting.
 
 <figure align="center">
-  <img src="images/VGG16.png" width="700" height="500" alt="VGG16 architecture">
+  <img src="images/VGG16.png" width="500" height="300" alt="VGG16 architecture">
   <figcaption>Figure 3. VGG16 model’s architecture.</figcaption>
 </figure>
 
