@@ -6,10 +6,12 @@
 
 For the development of this approach, the **ISIC 2017 Dataset** has been used, which contains 2000 images. TEach image in the dataset is classified as melanoma, seborrheic keratosis, or benign nevus.
 
-<figure align="center">
+<p align="center">
   <img src="images/dataset.png" width="700" height="200" alt="VGG16 architecture">
-  <figcaption>Figure 1. Label distribution of ISIC 2017 challenge.</figcaption>
-</figure>
+</p>
+
+<p align="center">Figure 1. Label distribution of ISIC 2017 challenge.</p>
+
 
 
 ## Methodology
@@ -28,10 +30,12 @@ In the Machine Learning approach, the initial phase included preprocessing of im
 
 For the Deep Learning approach, we utilized the default preprocessing functions of Keras, ensuring consistency with the methods used during the training of the pretrained networks. To counteract the effects of an unbalanced dataset, data augmentation techniques were applied, including random transformations like rotations and flips on images of the minority classes. In the model creation and compilation stage, several pretrained networks such as InceptionResnetV2 and VGG16 were evaluated. These networks were modified at the top layers to suit the classification task at hand. The models were compiled using the Adam optimizer, and categorical cross-entropy was selected as the loss function, with accuracy as the evaluation metric. During training, we established specific parameters for epochs and class weights, and implemented an Early Stopping callback to reduce the risk of overfitting.
 
-<figure align="center">
-  <img src="images/VGG16.png" width="500" height="300" alt="VGG16 architecture">
-  <figcaption>Figure 3. VGG16 model’s architecture.</figcaption>
-</figure>
+<p align="center">
+  <img src="images/VGG16.png" width="700" height="200" alt="VGG16 architecture">
+</p>
+
+<p align="center">Figure 3. VGG16 model’s architecture.</p>
+
 
 ## Results:
 
