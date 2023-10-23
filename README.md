@@ -11,7 +11,7 @@ For the development of this approach, the **ISIC 2017 Dataset** has been used, w
 </p>
 
 <p align="center">Figure 1. Label distribution of ISIC 2017 challenge.</p>
-
+  
 
 
 ## Methodology
